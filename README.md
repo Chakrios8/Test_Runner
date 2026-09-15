@@ -11,14 +11,14 @@ A lightweight, high-performance C++ utility to automate the compilation, executi
 
 Your workspace needs a specific structure so the runner knows where to look for your inputs and where to save the outputs. Create a directory that looks exactly like this:
 
-
+```
 Test_Runner/
 ├── tester.cpp       # The tool from this repository
 ├── algorithm.cpp          # The C++ code you want to test
 └── test_cases/        # Your test folder (can be named anything)
     ├── inputs/           # Put your .txt or .in files here
     └── expected/         # (Optional) Put the correct .txt or .out files here
-
+```
 
 
 *(Note: The runner will automatically create an `outputs/` folder inside your test directory when you run it, and it will clean out old files for you).*
